@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":["file:///root/projects/holidayhomes/app/images/hhs_Logo.svg.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 314, height: 88, blurDataURL: null, blurWidth: 0, blurHeight: 0 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,kHAAA,CAAA,UAAG;IAAE,OAAO;IAAK,QAAQ;IAAI,aAAa;IAAM,WAAW;IAAG,YAAY;AAAE","debugId":null}},
+    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":["file:///root/projects/holidayhomes/app/elements/Header.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport Logo from \"../images/hhs_Logo.svg\";\n\nconst Header = () => {\n    return (\n        <div className=\"w-full h-40 bg-amber-500 flex items-center justify-center\">\n            <Image width={314} height={110} src={Logo} alt=\"logo\" />\n        </div>\n    );\n}\n\nexport default Header;"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEA,MAAM,SAAS;IACX,qBACI,8OAAC;QAAI,WAAU;kBACX,cAAA,8OAAC,6HAAA,CAAA,UAAK;YAAC,OAAO;YAAK,QAAQ;YAAK,KAAK,kRAAA,CAAA,UAAI;YAAE,KAAI;;;;;;;;;;;AAG3D;uCAEe","debugId":null}},
+    {"offset": {"line": 83, "column": 0}, "map": {"version":3,"sources":["file:///root/projects/holidayhomes/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport Header from '@/app/elements/Header'\n\nexport default function Home() {\n  return (\n    <div className=\"w-full h-full\">\n      <Header />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,0HAAA,CAAA,UAAM;;;;;;;;;;AAGb","debugId":null}}]
+}
