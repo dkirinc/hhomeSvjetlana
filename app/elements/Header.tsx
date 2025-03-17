@@ -4,10 +4,14 @@ import Button from "./Button";
 
 const Header = () => {
     return (
-        <div className="w-full p-6 fixed px-20  left-0 top-0 z-10 bg-white flex items-center justify-between">
-            <Image width={314} height={110} src={Logo} alt="logo" />
-            <Button text={"REZERVACIJA"} gap={4} txSize={1} />
+        <div className="w-full absolute left-0 top-0 z-10 bg-white flex  content-center justify-center items-center ">
+            <div className="max-w-[1800px] w-full  flex content-center justify-between items-center p-10">
+                <Image width={314} height={110} src={Logo} alt="logo" />
+                <Button text={"REZERVACIJA"} padding={10} txSize={20} />
+
+            </div>
         </div>
+
     );
 }
 
