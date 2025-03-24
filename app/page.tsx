@@ -5,7 +5,9 @@ import SectionCharacteristics from './elements/SectionCharacteristics/SectionCha
 import SectionAmenities from './elements/SectionAmenities/SectionAmenities';
 import SectionGallery from './elements/SectionGallery/SectionGallery';
 import SectionReviews from './elements/SectionReviews/SectionReviews';
+import LightBox from './elements/LightBox';
 import Footer from './elements/Footer';
+
 import { MainProvider } from '@/app/assets/Context/MainContext';
 
 export default function Home() {
@@ -19,6 +21,7 @@ export default function Home() {
         <SectionAmenities />
         <SectionGallery />
         <SectionReviews />
+        <LightBox />
         <Footer />
       </MainProvider>
     </div>
