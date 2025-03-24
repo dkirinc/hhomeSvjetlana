@@ -50,25 +50,32 @@ __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
 ;
-const Button = ({ text, padding, txSize })=>{
+;
+const Button = ({ text, padding, txSize, type })=>{
+    const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useState"])(false);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex content-center justify-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             className: `w-full  h-full bg-[#E1BE6A] text-white`,
             style: {
                 fontSize: `${txSize}px`,
-                padding: `${padding}px`
+                padding: `${padding}px`,
+                /*  background: `${type === 1 ? "#E1BE6A" : "white"}`, */ color: `${type === 1 ? "white" : "black"}`,
+                background: isHovered ? type === 1 ? "#d1a85e" // Hover boja za tip 1
+                 : "#f0f0f0" // Hover boja za ostale tipove
+                 : type === 1 ? "#E1BE6A" : "white"
             },
             children: text
         }, void 0, false, {
             fileName: "[project]/app/elements/Button.tsx",
-            lineNumber: 12,
+            lineNumber: 16,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/elements/Button.tsx",
-        lineNumber: 11,
+        lineNumber: 15,
         columnNumber: 9
     }, this);
 };
@@ -109,7 +116,8 @@ const Header = ()=>{
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$Button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     text: "REZERVACIJA",
                     padding: 10,
-                    txSize: 20
+                    txSize: 20,
+                    type: 1
                 }, void 0, false, {
                     fileName: "[project]/app/elements/Header.tsx",
                     lineNumber: 10,
@@ -1198,7 +1206,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 function GalleryItem({ data }) {
-    console.log(data);
     if (!data.value || data.value.length === 0) {
         return null;
     }
@@ -1210,8 +1217,8 @@ function GalleryItem({ data }) {
                 src: firstItem.src,
                 alt: data.about[0]?.hr || 'Image',
                 className: "object-cover w-full h-full",
-                width: 500,
-                height: 500
+                width: 600,
+                height: 600
             }, void 0, false, {
                 fileName: "[project]/app/elements/SectionGallery/GalleryItem.tsx",
                 lineNumber: 23,
@@ -1279,7 +1286,7 @@ const SectionGallery = ()=>{
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-128 grid grid-cols-3 grid-rows-2 gap-10",
+                className: "w-full  grid grid-cols-3 grid-rows-2 gap-10",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$assets$2f$GalleryData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].map((gallery)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$SectionGallery$2f$GalleryItem$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         data: gallery
                     }, gallery.id, false, {
@@ -1641,7 +1648,8 @@ const Footer = ()=>{
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$Button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     text: "Pošalji Upit",
                     txSize: 20,
-                    padding: 20
+                    padding: 20,
+                    type: 1
                 }, void 0, false, {
                     fileName: "[project]/app/elements/Footer.tsx",
                     lineNumber: 8,
