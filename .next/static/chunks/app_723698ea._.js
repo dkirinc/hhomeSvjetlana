@@ -390,9 +390,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$assets$2f$HouseCharac
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$SectionCharacteristics$2f$Characteristics$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/elements/SectionCharacteristics/Characteristics.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$assets$2f$Context$2f$MainContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/assets/Context/MainContext.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -427,6 +430,34 @@ const SectionCharacteristics = ()=>{
     }["SectionCharacteristics.useMemo"], [
         characteristicsIn
     ]);
+    const colorVariants = {
+        active: {
+            backgroundColor: "#E1BE6A",
+            color: "#FFFF"
+        },
+        inactive: {
+            backgroundColor: "#FFFF",
+            color: "#000000"
+        }
+    };
+    const itemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 20
+        },
+        visible: (index)=>({
+                opacity: 1,
+                y: 0,
+                transition: {
+                    delay: index * 0.1,
+                    duration: 0.3
+                }
+            }),
+        exit: {
+            opacity: 0,
+            y: -20
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-max-[1440px] relative",
         children: [
@@ -436,7 +467,7 @@ const SectionCharacteristics = ()=>{
                 alt: "signature"
             }, void 0, false, {
                 fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                lineNumber: 33,
+                lineNumber: 56,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -452,7 +483,7 @@ const SectionCharacteristics = ()=>{
                                     children: "Karakteristike kuće"
                                 }, void 0, false, {
                                     fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 60,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,36 +492,42 @@ const SectionCharacteristics = ()=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "w-full flex",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: `w-full h-full bg-[#E1BE6A] text-white p-2 font-light cursor-pointer`,
-                                                    style: {
-                                                        background: `${characteristicsIn ? "#E1BE6A" : "white"}`,
-                                                        color: `${characteristicsIn ? "white" : "black"}`
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                    className: `w-full h-full p-2 font-light cursor-pointer`,
+                                                    variants: colorVariants,
+                                                    initial: "inactive" // 2. Postavite početno stanje
+                                                    ,
+                                                    animate: characteristicsIn ? "active" : "inactive",
+                                                    transition: {
+                                                        duration: 0.5
                                                     },
                                                     onClick: ()=>setCharacteristicsIn(true),
                                                     children: "Unutarnji prostor"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                                    lineNumber: 40,
+                                                    lineNumber: 63,
                                                     columnNumber: 33
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: `w-full h-full bg-white text-black p-2 font-light cursor-pointer`,
-                                                    style: {
-                                                        background: `${characteristicsIn ? "white" : "#E1BE6A"}`,
-                                                        color: `${characteristicsIn ? "black" : "white"}`
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                    className: `w-full h-full p-2 font-light cursor-pointer`,
+                                                    variants: colorVariants,
+                                                    initial: "inactive" // 2. Postavite početno stanje
+                                                    ,
+                                                    animate: characteristicsIn ? "inactive" : "active",
+                                                    transition: {
+                                                        duration: 0.5
                                                     },
                                                     onClick: ()=>setCharacteristicsIn(false),
                                                     children: "Vanjski prostor"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                                    lineNumber: 48,
+                                                    lineNumber: 73,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                            lineNumber: 39,
+                                            lineNumber: 62,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -498,72 +535,108 @@ const SectionCharacteristics = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-full pl-2 flex flex-col gap-0",
-                                                    children: firstObjectHrValues.map((hrValue, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$SectionCharacteristics$2f$Characteristics$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                            text: hrValue
-                                                        }, index, false, {
-                                                            fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                                            lineNumber: 63,
-                                                            columnNumber: 41
-                                                        }, this))
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                        mode: "wait",
+                                                        children: firstObjectHrValues.map((hrValue, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                variants: itemVariants,
+                                                                initial: "hidden",
+                                                                animate: "visible",
+                                                                exit: "exit",
+                                                                custom: index,
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$SectionCharacteristics$2f$Characteristics$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                    text: hrValue
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
+                                                                    lineNumber: 97,
+                                                                    columnNumber: 49
+                                                                }, this)
+                                                            }, hrValue, false, {
+                                                                fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
+                                                                lineNumber: 89,
+                                                                columnNumber: 45
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
+                                                        lineNumber: 87,
+                                                        columnNumber: 37
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 86,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-full pl-2",
-                                                    children: secondObjectHrValues.map((hrValue, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$SectionCharacteristics$2f$Characteristics$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                            text: hrValue
-                                                        }, index, false, {
-                                                            fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                                            lineNumber: 68,
-                                                            columnNumber: 41
-                                                        }, this))
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                        mode: "wait",
+                                                        children: secondObjectHrValues.map((hrValue, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                variants: itemVariants,
+                                                                initial: "hidden",
+                                                                animate: "visible",
+                                                                exit: "exit",
+                                                                custom: index,
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$elements$2f$SectionCharacteristics$2f$Characteristics$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                    text: hrValue
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
+                                                                    lineNumber: 114,
+                                                                    columnNumber: 49
+                                                                }, this)
+                                                            }, hrValue, false, {
+                                                                fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
+                                                                lineNumber: 106,
+                                                                columnNumber: 45
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
+                                                        lineNumber: 104,
+                                                        columnNumber: 37
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                                    lineNumber: 66,
+                                                    lineNumber: 103,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 84,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 61,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                            lineNumber: 36,
+                            lineNumber: 59,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                        lineNumber: 35,
+                        lineNumber: 58,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full h-full"
                     }, void 0, false, {
                         fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                        lineNumber: 76,
+                        lineNumber: 124,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-                lineNumber: 34,
+                lineNumber: 57,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/elements/SectionCharacteristics/SectionCharacteristics.tsx",
-        lineNumber: 32,
+        lineNumber: 55,
         columnNumber: 9
     }, this);
 };

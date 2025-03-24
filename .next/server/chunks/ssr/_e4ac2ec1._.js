@@ -99,13 +99,14 @@ const Header = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full absolute left-0 top-0 z-10 bg-white flex  content-center justify-center items-center ",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-[1800px] w-full  flex content-center justify-between items-center p-10",
+            className: "max-w-[1800px] w-full  flex content-center justify-between items-center p-4 lg:p-10",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                    width: 314,
-                    height: 110,
+                    width: 100,
+                    height: 50,
                     src: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$images$2f$hhs_Logo$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$app$2f$images$2f$hhs_Logo$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                    alt: "logo"
+                    alt: "logo",
+                    className: ""
                 }, void 0, false, {
                     fileName: "[project]/app/elements/Header.tsx",
                     lineNumber: 9,
@@ -927,17 +928,17 @@ function GalleryItem({ data }) {
     }
     const firstItem = data.value[0];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `w-full h-full relative ${data.id === 5 ? 'col-span-2' : ''}`,
+        className: `w-full h-full relative ${data.id === 5 ? 'col-span-2' : ''} transition duration-300 hover:scale-105`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 src: firstItem.src,
                 alt: data.about[0]?.hr || 'Image',
-                className: "object-cover w-full h-full",
+                className: "object-cover w-full h-full ",
                 width: 600,
                 height: 600
             }, void 0, false, {
                 fileName: "[project]/app/elements/SectionGallery/GalleryItem.tsx",
-                lineNumber: 23,
+                lineNumber: 26,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -948,7 +949,7 @@ function GalleryItem({ data }) {
                         children: data.about[0]?.hr || 'Unknown'
                     }, void 0, false, {
                         fileName: "[project]/app/elements/SectionGallery/GalleryItem.tsx",
-                        lineNumber: 31,
+                        lineNumber: 34,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -956,19 +957,19 @@ function GalleryItem({ data }) {
                         children: data.value.length
                     }, void 0, false, {
                         fileName: "[project]/app/elements/SectionGallery/GalleryItem.tsx",
-                        lineNumber: 32,
+                        lineNumber: 35,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/elements/SectionGallery/GalleryItem.tsx",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 13
             }, this)
         ]
     }, firstItem.id, true, {
         fileName: "[project]/app/elements/SectionGallery/GalleryItem.tsx",
-        lineNumber: 19,
+        lineNumber: 22,
         columnNumber: 9
     }, this);
 }
