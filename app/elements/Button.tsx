@@ -7,9 +7,10 @@ interface ButtonProps {
     padding: number;
     txSize: number;
     type: number;
+    onClick?: () => void;
 }
 
-const Button = ({ text, padding, txSize, type }: ButtonProps) => {
+const Button = ({ text, padding, txSize, type, onClick }: ButtonProps) => {
 
     const [isHovered, setIsHovered] = useState(false);
 
@@ -18,6 +19,7 @@ const Button = ({ text, padding, txSize, type }: ButtonProps) => {
             <button className={`w-full  h-full bg-[#E1BE6A] text-white`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={onClick}
                 style={{
                     fontSize: `${txSize}px`,
                     padding: `${padding}px`,

@@ -2,10 +2,13 @@
 
 import Button from "./Button";
 import { useState, useEffect } from "react";
+import { MainContext } from "../assets/Context/MainContext";
+import { useContext } from "react";
 
 const Footer = () => {
 
     const [screenIsSmall, setScreenIsSmall] = useState(false);
+    const { setModalStatus } = useContext(MainContext);
 
     useEffect(() => {
         function handleResize() {
@@ -25,7 +28,7 @@ const Footer = () => {
         <div className="w-full flex  content-center justify-center items-center   bg-[#F5F1F1]">
             <div className="max-w-[1400px] w-full flex content-center justify-between items-center p-10">
                 <h2 className={`${screenIsSmall ? "text-xl" : "text-3xl"} text-3xl font-light`}>Rezerviraj svoj termin</h2>
-                <Button text="Pošalji Upit" txSize={!screenIsSmall ? 20 : 10} padding={10} type={1} />
+                <Button text="Pošalji Upit" txSize={!screenIsSmall ? 20 : 10} padding={10} type={1} onClick={() => setModalStatus(true)} />
             </div>
         </div>
     );

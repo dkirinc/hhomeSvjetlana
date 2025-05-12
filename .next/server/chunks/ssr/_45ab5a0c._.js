@@ -866,7 +866,7 @@ const SectionReviews = ()=>{
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex gap-5 justify-between ",
+                        className: "flex gap-5 justify-between flex-stretch",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex content-center justify-center items-center ",
@@ -902,7 +902,7 @@ const SectionReviews = ()=>{
                                                     className: "h-16 w-16"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 19,
+                                                    lineNumber: 22,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -913,7 +913,7 @@ const SectionReviews = ()=>{
                                                             children: "Dagmar"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                            lineNumber: 21,
+                                                            lineNumber: 24,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -927,7 +927,7 @@ const SectionReviews = ()=>{
                                                                     className: "w-5 h-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                                    lineNumber: 23,
+                                                                    lineNumber: 26,
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -935,25 +935,25 @@ const SectionReviews = ()=>{
                                                                     children: "Datum: 31. srpnja 2024"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                                    lineNumber: 24,
+                                                                    lineNumber: 27,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                            lineNumber: 22,
+                                                            lineNumber: 25,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 20,
+                                                    lineNumber: 23,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                            lineNumber: 18,
+                                            lineNumber: 21,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -964,7 +964,7 @@ const SectionReviews = ()=>{
                                                     children: "Das Haus ist super gemütlich. Es hat insgesamt 3 Schlafzimmer,somit hat man als Familie mit 2 Kindern mehr als genug Platz! Man hat die Möglichkeit hinter dem Haus wo sich auch die Grillmöglichkeit befindet unter dem schönen Olivenbaum zu sitzen,vor dem Haus auf der Terrasse oder im oberen Bereich auf dem Balkon! Die Küche ist sehr gut ausgestattet. Die Lage ist perfekt wenn man es lieber..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 29,
+                                                    lineNumber: 32,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -972,24 +972,24 @@ const SectionReviews = ()=>{
                                                     children: "+ pokaži više"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 31,
+                                                    lineNumber: 34,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                            lineNumber: 28,
+                                            lineNumber: 31,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                    lineNumber: 17,
+                                    lineNumber: 20,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                lineNumber: 16,
+                                lineNumber: 19,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1008,7 +1008,7 @@ const SectionReviews = ()=>{
                                                     className: "h-16 w-16"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 38,
+                                                    lineNumber: 41,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1018,7 +1018,7 @@ const SectionReviews = ()=>{
                                                             children: "Tunde"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                            lineNumber: 40,
+                                                            lineNumber: 43,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1032,7 +1032,7 @@ const SectionReviews = ()=>{
                                                                     className: "w-5 h-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                                    lineNumber: 42,
+                                                                    lineNumber: 45,
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1040,25 +1040,25 @@ const SectionReviews = ()=>{
                                                                     children: "Datum: 31. srpnja 2024"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                                    lineNumber: 43,
+                                                                    lineNumber: 46,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                            lineNumber: 41,
+                                                            lineNumber: 44,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 39,
+                                                    lineNumber: 42,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 40,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1069,7 +1069,7 @@ const SectionReviews = ()=>{
                                                     children: "A ház nagyon szép, kényelmes és felszerelt. A wifi jól működött. Svjetlana nagyon kedves és rugalmas. A hűtőben gyümölcs és egy üveg helyi bor várt ránk :-)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 48,
+                                                    lineNumber: 51,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1077,36 +1077,36 @@ const SectionReviews = ()=>{
                                                     children: "+ pokaži više"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                                    lineNumber: 51,
+                                                    lineNumber: 54,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 50,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 39,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                lineNumber: 35,
+                                lineNumber: 38,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex content-center justify-center items-center ",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {}, void 0, false, {
                                     fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 60,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                                lineNumber: 56,
+                                lineNumber: 59,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -1123,7 +1123,7 @@ const SectionReviews = ()=>{
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                 fileName: "[project]/app/elements/SectionReviews/SectionReviews.tsx",
-                lineNumber: 61,
+                lineNumber: 64,
                 columnNumber: 13
             }, this)
         ]

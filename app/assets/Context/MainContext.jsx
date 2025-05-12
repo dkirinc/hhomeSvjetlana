@@ -11,6 +11,8 @@ export const MainContext = createContext({
     setOpenLightBox: () => { },
     currentSlideIndex: 0,
     setCurrentSlideIndex: () => { },
+    modalStatus: false,
+    setModalStatus: () => { }
 });
 
 export const MainProvider = ({ children }) => {
@@ -19,11 +21,12 @@ export const MainProvider = ({ children }) => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
     const refBtnIn = useRef(null);
     const refBtnOut = useRef(null);
+    const [modalStatus, setModalStatus] = useState(false);
 
     return (
         <MainContext.Provider value={{
             characteristicsIn, setCharacteristicsIn, openLightBox, setOpenLightBox, currentSlideIndex,
-            setCurrentSlideIndex, refBtnIn, refBtnOut
+            setCurrentSlideIndex, refBtnIn, refBtnOut, modalStatus, setModalStatus
         }}>
             {children}
         </MainContext.Provider>

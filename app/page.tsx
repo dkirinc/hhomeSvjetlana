@@ -7,6 +7,7 @@ import SectionGallery from './elements/SectionGallery/SectionGallery';
 import SectionReviews from './elements/SectionReviews/SectionReviews';
 import LightBox from './elements/LightBox';
 import Footer from './elements/Footer';
+import Modal from './elements/Modal';
 
 import { MainProvider } from '@/app/assets/Context/MainContext';
 
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div className="w-full h-full flex flex-col content-center wrap items-center gap-30 relative">
       <MainProvider>
+        <Modal />
         <Header />
         <Hero />
         <SectionAbout />
