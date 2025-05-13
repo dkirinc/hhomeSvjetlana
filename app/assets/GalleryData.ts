@@ -7,8 +7,8 @@ const GalleryData: GalleryType[] = [
         about: [
             {
                 hr: 'Kuhinja',
-                en: '',
-                deu: '',
+                en: 'Kitchen',
+                deu: 'Küche',
             },
         ],
         value: [
@@ -28,8 +28,8 @@ const GalleryData: GalleryType[] = [
         about: [
             {
                 hr: 'Sobe',
-                en: '',
-                deu: '',
+                en: 'Rooms',
+                deu: 'Zimmer',
             },
         ],
         value: [
@@ -44,8 +44,8 @@ const GalleryData: GalleryType[] = [
         about: [
             {
                 hr: 'Kupaonica',
-                en: '',
-                deu: '',
+                en: 'Bathroom',
+                deu: 'Badezimmer',
             },
         ],
         value: [
@@ -64,9 +64,9 @@ const GalleryData: GalleryType[] = [
         id: 4,
         about: [
             {
-                hr: 'Sobe',
-                en: '',
-                deu: '',
+                hr: 'Dvorište',
+                en: 'Yard',
+                deu: 'Hof',
             },
         ],
         value: [
@@ -82,8 +82,8 @@ const GalleryData: GalleryType[] = [
         about: [
             {
                 hr: 'Dnevni boravak',
-                en: '',
-                deu: '',
+                en: 'Living room',
+                deu: 'Wohnzimmer',
             },
         ],
         value: [

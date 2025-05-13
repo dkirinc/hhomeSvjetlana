@@ -9,9 +9,10 @@ import { useContext } from "react";
 
 const Header = () => {
 
-    const { setModalStatus } = useContext(MainContext)
+    const { setModalStatus, lang } = useContext(MainContext)
 
     const [screenIsSmall, setScreenIsSmall] = useState(false);
+
 
     useEffect(() => {
         function handleResize() {
@@ -27,11 +28,17 @@ const Header = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const btnText = {
+        hr: "REZERVACIJA",
+        en: "RESERVATION",
+        deu: "RESERVIERUNG"
+    }
+
     return (
         <div className="w-full absolute left-0 top-0 z-10 bg-white flex  content-center justify-center items-center ">
             <div className="max-w-[1400px] w-full  flex content-center justify-between items-center p-4 lg:p-10">
                 <Image width={!screenIsSmall ? 314 : 157} height={!screenIsSmall ? 110 : 55} src={Logo} alt="logo" className="" />
-                <Button text={"REZERVACIJA"} padding={10} txSize={!screenIsSmall ? 20 : 10} type={1} onClick={() => setModalStatus(true)} />
+                <Button text={btnText[lang]} padding={10} txSize={!screenIsSmall ? 20 : 10} type={1} onClick={() => setModalStatus(true)} />
 
             </div>
         </div>

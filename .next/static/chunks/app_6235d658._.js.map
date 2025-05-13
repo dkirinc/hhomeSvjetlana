@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///root/projects/holidayhomes/app/images/house/heroImage.png.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 1609, height: 965, blurDataURL: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAqUlEQVR42gWASwoBYQCA/xtYW0mSlQ2SkkZqYiHyCGmGYpAISRPypoyQUiblsWXjAI7hRJ/EcxHFnMU5HqYUwk6CdgtRt5Va0osxyiNGjRDmJMZ1VeQ8zzFoZtGXY7qnO8PPD1EvBFl1YsxKPo7TCtu1zuH1oHu5sXh/Ea2EDV3xo6UletUcVVWh1VDRymkMY4PQZAdKxIUc8CBLEqlMmU5/TFtNstuf+AN7slg2nAyn7wAAAABJRU5ErkJggg==\", blurWidth: 8, blurHeight: 5 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,4HAAA,CAAA,UAAG;IAAE,OAAO;IAAM,QAAQ;IAAK,aAAa;IAA0U,WAAW;IAAG,YAAY;AAAE","debugId":null}},
-    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///root/projects/holidayhomes/app/elements/Hero.tsx"],"sourcesContent":["'use client';\n\nimport Image from \"next/image\";\nimport HeroImage from '@/app/images/house/heroImage.png'\n\n\nconst Hero = () => {\n\n    return (\n        <div className={`w-full h-screen relative`}>\n            <Image src={HeroImage} alt=\"hero\" fill objectFit=\"cover\" />\n        </div>\n    );\n}\n\nexport default Hero;"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;;AAMA,MAAM,OAAO;IAET,qBACI,6LAAC;QAAI,WAAW,CAAC,wBAAwB,CAAC;kBACtC,cAAA,6LAAC,gIAAA,CAAA,UAAK;YAAC,KAAK,ySAAA,CAAA,UAAS;YAAE,KAAI;YAAO,IAAI;YAAC,WAAU;;;;;;;;;;;AAG7D;KAPM;uCASS","debugId":null}}]
-}

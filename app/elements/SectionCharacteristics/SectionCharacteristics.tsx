@@ -6,12 +6,12 @@ import HouseCharacteristics from '@/app/assets/HouseCharacteristicsData'
 import Characteristics from "./Characteristics";
 import { MainContext } from "@/app/assets/Context/MainContext";
 import { useContext, useMemo } from "react";
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useEffect, useState } from "react";
 
 const SectionCharacteristics = () => {
 
-    const { characteristicsIn, setCharacteristicsIn } = useContext(MainContext);
+    const { characteristicsIn, setCharacteristicsIn, lang } = useContext(MainContext);
 
     const [isLargeScreen, setIsLargeScreen] = useState(false);
 
@@ -29,16 +29,16 @@ const SectionCharacteristics = () => {
     const { firstObjectHrValues, secondObjectHrValues } = useMemo(() => {
         if (characteristicsIn) {
             return {
-                firstObjectHrValues: HouseCharacteristics[0][0].value.map(item => item.hr),
-                secondObjectHrValues: HouseCharacteristics[0][1].value.map(item => item.hr)
+                firstObjectHrValues: HouseCharacteristics[0][0].value.map(item => item[lang]),
+                secondObjectHrValues: HouseCharacteristics[0][1].value.map(item => item[lang])
             };
         } else {
             return {
-                firstObjectHrValues: HouseCharacteristics[1][0].value.map(item => item.hr),
-                secondObjectHrValues: HouseCharacteristics[1][1].value.map(item => item.hr)
+                firstObjectHrValues: HouseCharacteristics[1][0].value.map(item => item[lang]),
+                secondObjectHrValues: HouseCharacteristics[1][1].value.map(item => item[lang])
             };
         }
-    }, [characteristicsIn]);
+    }, [lang, characteristicsIn]);
 
     const colorVariants = {
         active: {
@@ -53,7 +53,7 @@ const SectionCharacteristics = () => {
 
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
-        visible: (index) => ({
+        visible: (index: number) => ({
             opacity: 1,
             y: 0,
             transition: {
@@ -64,6 +64,23 @@ const SectionCharacteristics = () => {
         exit: { opacity: 0, y: -20 }
     };
 
+    const characteristicsText = {
+        hr: [
+            'Karakteristike kuće',
+            'Unutarnji prostor',
+            'Vanjski prostor'
+        ],
+        en: [
+            'House characteristics',
+            'Interior space',
+            'Outdoor space'
+        ],
+        deu: [
+            'Hauseigenschaften',
+            'Innenraum',
+            'Außenbereich'
+        ]
+    }
 
     return (
         <div className="w-full h-screen lg:h-full lg:w-[1440px] relative">
@@ -86,7 +103,7 @@ const SectionCharacteristics = () => {
             <div className="absolute top-0 left-0 w-full h-full flex ">
                 <div className="w-full h-full  flex flex-col items-end justify-center lg:pl-8">
                     <div className="w-full bg-[rgba(245,241,241,0.9)] flex flex-col content-center items-start p-10 gap-8">
-                        <h2 className="text-3xl font-light">Karakteristike kuće</h2>
+                        <h2 className="text-3xl font-light">{characteristicsText[lang][0]}</h2>
                         <div className="w-full h-full flex flex-col gap-4">
                             <div className="w-full flex">
                                 <motion.button
@@ -97,7 +114,7 @@ const SectionCharacteristics = () => {
                                     transition={{ duration: 0.5 }}
                                     onClick={() => setCharacteristicsIn(true)}
                                 >
-                                    Unutarnji prostor
+                                    {characteristicsText[lang][1]}
                                 </motion.button>
                                 <motion.button
                                     className={`w-full h-full p-2 font-light cursor-pointer`}
@@ -107,7 +124,7 @@ const SectionCharacteristics = () => {
                                     transition={{ duration: 0.5 }}
                                     onClick={() => setCharacteristicsIn(false)}
                                 >
-                                    Vanjski prostor
+                                    {characteristicsText[lang][2]}
                                 </motion.button>
                             </div>
                             <div className="w-full flex">

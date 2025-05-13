@@ -5,44 +5,44 @@ const HouseCharacteristicsData = [
             value: [{
                 id: 1,
                 hr: '150m2',
-                en: '',
-                deu: ''
+                en: '150m2',
+                deu: '150m2'
             },
             {
                 id: 2,
                 hr: '3 spavaće sobe',
-                en: '',
-                deu: ''
+                en: '3 bedrooms',
+                deu: '3 Schlafzimmer'
             },
             {
                 id: 3,
-                hr: 'Dnevni boravak   ',
-                en: '',
-                deu: ''
+                hr: 'Dnevni boravak',
+                en: 'Living room',
+                deu: 'Wohnzimmer'
             },
             {
                 id: 4,
                 hr: 'Kamin',
-                en: '',
-                deu: ''
+                en: 'Fireplace',
+                deu: 'Kamin'
             },
             {
                 id: 5,
                 hr: 'Klima uređaj',
-                en: '',
-                deu: ''
+                en: 'Air conditioner',
+                deu: 'Klimaanlage'
             },
             {
                 id: 6,
                 hr: 'Besplatni WiFi',
-                en: '',
-                deu: ''
+                en: 'Free WiFi',
+                deu: 'Kostenloses WIFI'
             },
             {
                 id: 7,
                 hr: 'TV',
-                en: '',
-                deu: ''
+                en: 'TV',
+                deu: 'TV'
             },]
         },
 
@@ -51,44 +51,44 @@ const HouseCharacteristicsData = [
             value: [{
                 id: 1,
                 hr: 'Opremljena kuhinja',
-                en: '',
-                deu: ''
+                en: 'Equipped kitchen',
+                deu: 'Ausgestattete Küche'
             },
             {
                 id: 2,
                 hr: 'Perilica rublja',
-                en: '',
-                deu: ''
+                en: 'Washing machine',
+                deu: 'Waschmaschine'
             },
             {
                 id: 3,
                 hr: '2 kupaonice ',
-                en: '',
-                deu: ''
+                en: '2 bathrooms',
+                deu: '2 Badezimmer'
             },
             {
                 id: 4,
                 hr: 'Glačalo',
-                en: '',
-                deu: ''
+                en: 'An iron',
+                deu: 'Ein Bügeleisen'
             },
             {
                 id: 5,
                 hr: 'Sušilo za rublje',
-                en: '',
-                deu: ''
+                en: 'Clothes dryer',
+                deu: 'Wäschetrockner'
             },
             {
                 id: 6,
                 hr: 'Ručnici i posteljina',
-                en: '',
-                deu: ''
+                en: 'Towels and linens',
+                deu: 'Handtücher und Bettwäsche'
             },
             {
                 id: 7,
                 hr: 'Društvene igre',
-                en: '',
-                deu: ''
+                en: 'Board games',
+                deu: 'Brettspiele'
             },]
         },
     ],
@@ -98,44 +98,44 @@ const HouseCharacteristicsData = [
             value: [{
                 id: 1,
                 hr: 'Parking',
-                en: '',
-                deu: ''
+                en: 'Parking',
+                deu: 'Parking'
             },
             {
                 id: 2,
                 hr: 'Privatni ulaz',
-                en: '',
-                deu: ''
+                en: 'Private entrance',
+                deu: 'Privater Eingang'
             },
             {
                 id: 3,
                 hr: 'Prednja terasa',
-                en: '',
-                deu: ''
+                en: 'Front terrace',
+                deu: 'Vordere Terrasse'
             },
             {
                 id: 4,
                 hr: 'Stražnja terasa',
-                en: '',
-                deu: ''
+                en: 'Back terrace',
+                deu: 'Hintere Terrasse'
             },
             {
                 id: 5,
                 hr: 'Balkon',
-                en: '',
-                deu: ''
+                en: 'Balcony',
+                deu: 'Balkon'
             },
             {
                 id: 6,
                 hr: 'Grijani jacuzzi',
-                en: '',
-                deu: ''
+                en: 'Heated jacuzzi',
+                deu: 'Beheizter Whirlpool'
             },
             {
                 id: 7,
                 hr: 'Vanjski tuš',
-                en: '',
-                deu: ''
+                en: 'Outdoor shower',
+                deu: 'Außendusche'
             },]
         },
 
@@ -144,44 +144,44 @@ const HouseCharacteristicsData = [
             value: [{
                 id: 1,
                 hr: 'Roštilj',
-                en: '',
-                deu: ''
+                en: 'Barbecue',
+                deu: 'Grill'
             },
             {
                 id: 2,
                 hr: 'Oprema za roštilj',
-                en: '',
-                deu: ''
+                en: 'Barbecue equipment',
+                deu: 'Grillausrüstung'
             },
             {
                 id: 3,
                 hr: 'Uređena okućnica i vrt',
-                en: '',
-                deu: ''
+                en: 'Landscaped yard and garden',
+                deu: 'Landschaftsgarten und Hof'
             },
             {
                 id: 4,
                 hr: 'Ležaljke',
-                en: '',
-                deu: ''
+                en: 'Sunbeds',
+                deu: 'Sonnenliegen'
             },
             {
                 id: 5,
                 hr: 'Vrtni namještaj',
-                en: '',
-                deu: ''
+                en: 'Garden furniture',
+                deu: 'Gartenmöbel'
             },
             {
                 id: 6,
                 hr: 'Ograđeno dvorište',
-                en: '',
-                deu: ''
+                en: 'Fenced yard',
+                deu: 'Eingezäunter Hof'
             },
             {
                 id: 7,
                 hr: 'Spremište',
-                en: '',
-                deu: ''
+                en: 'Storage',
+                deu: 'Lagerung'
             },]
         },
     ],

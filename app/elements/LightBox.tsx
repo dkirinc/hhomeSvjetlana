@@ -10,16 +10,16 @@ import GalleryData from '../assets/GalleryData';
 
 export default function LightBox() {
     const { openLightBox, setOpenLightBox, currentSlideIndex,
-        setCurrentSlideIndex } = useContext(MainContext);
+        setCurrentSlideIndex, lang } = useContext(MainContext);
 
     const slides = useMemo(() => {
         return GalleryData.flatMap(gallery =>
             gallery.value.map(item => ({
                 src: item.src,
-                description: gallery.about[0].hr
+                description: gallery.about[0][lang]
             }))
         );
-    }, []);
+    }, [lang]);
 
     return (
         <>
