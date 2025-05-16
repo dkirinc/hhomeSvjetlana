@@ -1,18 +1,39 @@
 import { useContext, useState } from "react";
-import { RxChevronDown } from "react-icons/rx";
 import { MainContext } from "../assets/Context/MainContext";
 
+type Lang = 'hr' | 'en' | 'deu';
 
+type OptionItem = {
+    label: string;
+    value: string;
+    href?: string;
+};
 
-const OptionChooser = ({ option, options }) => {
+type OptionGroup = {
+    id: string;
+    items: OptionItem[];
+};
+
+const OptionChooser = ({
+    option,
+    options,
+}: {
+    option: string;
+    options: OptionGroup[];
+}) => {
 
     const { lang, setLang } = useContext(MainContext)
 
     const [isOpen, setIsOpen] = useState(false);
-    const [itemSelected, setItemSelected] = useState(0)
 
-    const optionSelected = options.find((options) => options.id === option);
-    const itemAccSelected = optionSelected.items.find((item) => item.value === lang).label;
+    const optionSelected = options.find((opt) => opt.id === option);
+
+    if (!optionSelected) {
+        return <div>Option group not found.</div>;
+    }
+    const itemAccSelected = optionSelected?.items.find((item) => item.value === lang)?.label ?? "N/A";
+
+
 
     return (
         <div className=" relative border border-b-2 flex justify-between content-center items-center px-2 py-2  "
@@ -33,8 +54,8 @@ const OptionChooser = ({ option, options }) => {
                     {optionSelected.items.map((item, idx) => (
                         <li key={idx} className="w-full flex gap-2 content-center items-center justify-start"
                             onClick={() => {
-                                setItemSelected(idx)
-                                setLang(item.value)
+
+                                setLang(item.value as Lang);
                                 setIsOpen(false)
                             }
 
