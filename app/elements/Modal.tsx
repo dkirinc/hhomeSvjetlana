@@ -96,7 +96,7 @@ const Modal = () => {
         adultNumber: {
             hr: 'Broj odraslih',
             en: 'Number of adults',
-            deu: 'Anzahl der Erwachsenen',
+            deu: 'Anzahl Erwachsene',
         },
         chidrenNumber: {
             hr: 'Broj djece',
@@ -164,14 +164,13 @@ const Modal = () => {
                     <div className="w-full h-[550px]  flex flex-col items-end justify-center z-30 ">
                         <div className="w-full h-full  flex flex-col items-center justify-center bg-[#E1BE6A]/75 ">
                             <form onSubmit={handleSubmit}>
-                                <div className="w-full lg:w-[735px] h-[550px]  flex flex-col items-center justify-center gap-3 bg-[#F5F1F1] p-20 relative">
+                                <div className="w-full lg:w-[735px] h-[550px]  flex flex-col items-center justify-center gap-3 bg-[#F5F1F1] p-20 relative text-[10px] md:text-[14px]">
                                     <div className="w-full h-13 bg-white ">
                                         <input type="text" id="name"
                                             name="name" className="w-full h-full bg-white px-2" placeholder={modalText.name[lang]} onChange={handleFormInputChange}
                                             value={formData.name} required />
                                     </div>
                                     <div className="w-full h-13 flex content-center items-center gap-4">
-
                                         <DatePicker
                                             selected={formData.dateOfArrival}
                                             onChange={(date) => handleFormFieldUpdate("dateOfArrival", date)}

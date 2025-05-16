@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="w-full flex  content-center justify-center items-center   bg-[#F5F1F1]">
             <div className="max-w-[1400px] w-full flex content-center justify-between items-center p-10">
                 <h2 className={`${screenIsSmall ? "text-xl" : "text-3xl"} text-3xl font-light`}>{footerText[lang]}</h2>
-                <Button text={footerBtnTxt[lang]} txSize={!screenIsSmall ? 20 : 10} padding={10} type={1} onClick={() => setModalStatus(true)} />
+                <Button text={footerBtnTxt[lang]} txSize={!screenIsSmall ? 20 : 10} padding={10} type={1} onClick={() => setModalStatus(true)} reservation={true} />
             </div>
         </div>
     );

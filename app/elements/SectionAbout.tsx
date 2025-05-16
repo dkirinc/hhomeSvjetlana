@@ -4,11 +4,21 @@ import Image from "next/image";
 import Signature from "@/app/images/signature.svg"
 import Profile from "@/app/images/profile.svg"
 import { MainContext } from "@/app/assets/Context/MainContext";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 const SectionAbout = () => {
 
     const { lang } = useContext(MainContext)
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
+
+        checkMobile(); // Initial check
+        window.addEventListener('resize', checkMobile); // Listen for resize
+
+        return () => window.removeEventListener('resize', checkMobile); // Cleanup
+    }, []);
 
     const aboutText = {
         hr: [
@@ -44,16 +54,15 @@ const SectionAbout = () => {
     }
 
     return (
-        <div className="w-full flex flex-col p-8 gap-12 content-center items-center">
+        <div className="w-full flex flex-col p-8 gap-12 content-center items-center mb-20 md:mb-0">
             <div className="max-w-190 jost  text-center">
                 <p>{aboutText[lang][0]} <br /> {aboutText[lang][1]} <br /> {aboutText[lang][2]}</p>
             </div>
-            <div className="lg:w-105 flex flex-col gap-20 lg:gap-6 content-center items-center lg:items-end relative">
+            <div className="w-70 lg:w-105 flex flex-col xl:gap-20 gap-6 content-center items-center lg:items-end relative">
                 <p className="text-right font-light">{ownerText[lang][0]}<br />{ownerText[lang][1]} </p>
-                <div className="flex gap-5 content-center items-center">
-                    <Image width={125} height={110} src={Signature} alt="signature" />
-                    <Image width={160} height={160} src={Profile} alt="signature" className="lg:absolute top-[-6] right-[-190px]" />
-
+                <div className="flex gap-5 content-center items-center self-end  relative md:static ">
+                    <Image width={isMobile ? 90 : 125} height={isMobile ? 70 : 110} src={Signature} alt="signature" />
+                    <Image width={isMobile ? 60 : 160} height={isMobile ? 60 : 160} src={Profile} alt="signature" className=" absolute  md:top-[-6] md:right-[-190px] top-[58] right-0" />
                 </div>
 
             </div>

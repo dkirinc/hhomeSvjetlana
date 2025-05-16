@@ -21,7 +21,7 @@ const SectionReviews = () => {
     };
 
     return (
-        <div className="max-w-[1400px] h-full flex flex-col gap-14 content-center justify-center items-center">
+        <div className="max-w-[1400px] h-full flex flex-col gap-7 md:gap-14 content-center justify-center items-center mt-10 xl:mt-0">
             <h3 className="text-3xl font-light">Što kažu naši gosti</h3>
             <div className="w-full h-full flex flex-col lg:flex-row gap-20 lg:gap-10 p-8 content-center justify-center items-center ">
                 <Image src="/images/bookingRating.png" width={250} height={250} alt="reviews" className="object-contain" />

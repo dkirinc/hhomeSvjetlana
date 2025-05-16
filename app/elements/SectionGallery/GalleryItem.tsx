@@ -19,7 +19,6 @@ function GalleryItem({ data }: GalleryProps) {
     }
 
     const handleClick = () => {
-        // Pronalazak početnog indeksa za trenutnu galeriju
         let startIndex = 0;
         for (const gallery of GalleryData) {
             if (gallery.id === data.id) break;
@@ -46,9 +45,9 @@ function GalleryItem({ data }: GalleryProps) {
                 height={600}
             />
             <div className="absolute top-0 left-0 w-full h-full text-white flex justify-between items-end p-4">
-                <h3 className="text-3xl font-semibold">{data.about[0]?.[lang] || 'Unknown'}
+                <h3 className="text-xl md:text-3xl font-semibold">{data.about[0]?.[lang] || 'Unknown'}
                 </h3>
-                <h3 className="text-3xl font-semibold">{data.value.length}</h3>
+                <h3 className="text-xl md:text-3xl font-semibold">{data.value.length}</h3>
             </div>
         </div>
     );
