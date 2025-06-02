@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useRef, useState, ReactNode, MutableRefObject } from 'react';
+import React, { createContext, useRef, useState, ReactNode, MutableRefObject, useEffect } from 'react';
 
 // Definiši dozvoljene jezike
 export type Lang = 'hr' | 'en' | 'deu';
@@ -49,7 +49,22 @@ export const MainProvider = ({ children }: MainProviderProps) => {
     const refBtnIn = useRef<HTMLButtonElement | null>(null);
     const refBtnOut = useRef<HTMLButtonElement | null>(null);
     const [modalStatus, setModalStatus] = useState(false);
-    const [lang, setLang] = useState<Lang>('deu');
+    const [lang, setLang] = useState<Lang>('en');
+
+    useEffect(() => {
+        const browserLang = navigator.language?.substring(0, 2).toLowerCase();
+        let detectedLang: Lang = 'en';
+
+        if (browserLang === 'hr') {
+            detectedLang = 'hr';
+        } else if (browserLang === 'de') {
+            detectedLang = 'deu'; // koristi tvoj interni format
+        } else if (browserLang === 'en') {
+            detectedLang = 'en';
+        }
+
+        setLang(detectedLang);
+    }, []);
 
     return (
         <MainContext.Provider
